@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)?reddit\\.com/?((r/(popular|all)|best|hot|new|top|rising|controversial)(/[^?#]*)?)?/?([?#].*)?$",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html?site=shorts"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://([a-z0-9-]+\\.)?youtube\\.com/shorts(/.*)?$",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "url": "https://www.facebook.com/messages/"
+      }
+    },
+    "condition": {
+      "regexFilter": "^https?://(www\\.|web\\.)?facebook\\.com/?(home\\.php|watch(/[^?#]*)?|reels?(/[^?#]*)?|stories(/[^?#]*)?|groups/feed/?)?/?([?#].*)?$",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
