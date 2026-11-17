@@ -10,10 +10,10 @@ const SITES = {
     note: "Messages, notifications and profiles still work.",
   },
   youtube: {
-    feed: /^\/(feed\/(trending|explore)\/?)?$/i,          // home recommendations, Trending
+    feed: /^\/(feed\/(trending|explore|subscriptions)\/?)?$/i, // home, Trending, Subscriptions
     inPost: /^\/watch/i,
     hide: "ytd-page-manager",
-    note: "Search, subscriptions and video links still work.",
+    note: "Search and video links still work.",
   },
 };
 const SITE = SITES[location.hostname.includes("youtube") ? "youtube" : "instagram"];

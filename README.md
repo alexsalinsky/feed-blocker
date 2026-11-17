@@ -10,7 +10,7 @@ Demo: https://alexsalinsky.github.io/build-room-visuals/reddit-feed-blocker/demo
 |---|---|---|
 | Reddit | Home page, `/best`, `/hot`, `/new`, `/top`, `/rising`, `/r/popular`, `/r/all` go to a grumpy alien bouncer page | Subreddits and posts |
 | Instagram | Home feed, Explore and Reels: three guided breaths, then catch a "Show the feed" button that runs from your mouse five times | Messages, notifications, profiles, single posts and reels |
-| YouTube | Home page gets the same breathe-and-chase gate. Shorts always get the bouncer. Videos play with no "up next" column, no end-screen suggestions, and autoplay off | Search, subscriptions, any video link |
+| YouTube | Home page and Subscriptions get the same breathe-and-chase gate, and the left sidebar is gone. Shorts always get the bouncer. Videos play with no "up next" column, no end-screen suggestions, and autoplay off | Search, any video link |
 | Facebook | Feed, stories, reels, Watch and the groups feed always go to Messages | Messages, Marketplace, groups, profiles, events |
 
 The bouncer page suggests a few slow breaths with a breathing circle, or a glass of water.

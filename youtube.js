@@ -1,14 +1,18 @@
 // YouTube extras on top of the feed gate:
 // - Shorts go to the bouncer page (the network rule catches full loads, this catches in-site clicks)
+// - The left sidebar (subscriptions list) and its menu button are gone
 // - Shorts shelves, the "up next" sidebar and end-of-video suggestions are hidden
 // - Autoplay gets switched off, so one video doesn't roll into the next
 const css = document.createElement("style");
 css.textContent = `
+  ytd-guide-renderer, ytd-mini-guide-renderer, tp-yt-app-drawer#guide, #guide-button, yt-icon-button#guide-button,
+  grid-shelf-view-model, ytd-video-renderer:has(a[href^="/shorts/"]),
   ytd-reel-shelf-renderer, ytd-rich-shelf-renderer[is-shorts], ytd-rich-section-renderer:has([is-shorts]),
   ytd-guide-entry-renderer:has(a[title="Shorts"]), ytd-mini-guide-entry-renderer[aria-label="Shorts"],
   ytd-watch-flexy #related, ytd-watch-next-secondary-results-renderer,
   .ytp-endscreen-content, .ytp-ce-element, .ytp-autonav-endscreen-countdown-overlay,
   .ytp-fullscreen-grid, .ytp-fullscreen-grid-stills-container { display:none !important; }
+  #page-manager.ytd-app, ytd-app ytd-page-manager { margin-left:0 !important; }
 `;
 const blocked = chrome.runtime.getURL("blocked.html?site=shorts");
 

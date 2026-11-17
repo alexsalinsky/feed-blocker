@@ -1,7 +1,7 @@
 // Shorts get their own line on the blocked page.
 if (new URLSearchParams(location.search).get("site") === "shorts") {
   document.getElementById("why").textContent = "You decided Shorts are bad for you.";
-  document.querySelector("small").textContent = "Search, subscriptions and regular videos still open.";
+  document.querySelector("small").textContent = "Search and regular videos still open.";
 }
 
 // Matches the 10s CSS breathing animation: 5s in, 5s out.
